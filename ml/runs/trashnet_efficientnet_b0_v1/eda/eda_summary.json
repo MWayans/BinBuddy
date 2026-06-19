@@ -1,0 +1,48 @@
+{
+  "dataset_path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized",
+  "total_images": 2527,
+  "class_distribution": {
+    "glass": 501,
+    "metal": 410,
+    "plastic": 482,
+    "paper": 594,
+    "cardboard": 403,
+    "trash": 137
+  },
+  "split_distribution": {
+    "train": {
+      "glass": 350,
+      "metal": 287,
+      "plastic": 337,
+      "paper": 415,
+      "cardboard": 282,
+      "trash": 95
+    },
+    "val": {
+      "plastic": 72,
+      "glass": 75,
+      "paper": 89,
+      "metal": 61,
+      "cardboard": 60,
+      "trash": 20
+    },
+    "test": {
+      "plastic": 73,
+      "glass": 76,
+      "paper": 90,
+      "trash": 22,
+      "metal": 62,
+      "cardboard": 61
+    }
+  },
+  "image_width": {
+    "min": 512,
+    "max": 512,
+    "mean": 512.0
+  },
+  "image_height": {
+    "min": 384,
+    "max": 384,
+    "mean": 384.0
+  }
+}

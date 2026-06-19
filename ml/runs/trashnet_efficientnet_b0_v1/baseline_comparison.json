@@ -1,0 +1,53 @@
+{
+  "experiment_name": "trashnet_efficientnet_b0_v1",
+  "test_samples": {
+    "cnn": 384,
+    "llm": 384
+  },
+  "summary": {
+    "cnn": {
+      "accuracy": 0.9322916666666666,
+      "macro_f1": 0.923234784797827,
+      "weighted_f1": 0.9324630662060289
+    },
+    "llm": {
+      "accuracy": 0.9088541666666666,
+      "accuracy_valid_only": 0.9088541666666666,
+      "macro_f1": 0.8175898614971097,
+      "weighted_f1": 0.8972409619477192,
+      "parse_rate": 1.0,
+      "model": "openai/gpt-4o-mini"
+    },
+    "delta": {
+      "accuracy": 0.0234375,
+      "macro_f1": 0.10564492330071729
+    }
+  },
+  "per_class_f1": {
+    "Cardboard": {
+      "cnn": 0.9523809523809523,
+      "llm": 0.9836065573770492
+    },
+    "General Waste": {
+      "cnn": 0.8717948717948718,
+      "llm": 0.1935483870967742
+    },
+    "Glass": {
+      "cnn": 0.9395973154362416,
+      "llm": 0.9681528662420382
+    },
+    "Metal": {
+      "cnn": 0.8787878787878788,
+      "llm": 0.9586776859504132
+    },
+    "Paper": {
+      "cnn": 0.9662921348314607,
+      "llm": 0.9265536723163842
+    },
+    "Plastic": {
+      "cnn": 0.9305555555555556,
+      "llm": 0.875
+    }
+  },
+  "winner_macro_f1": "cnn"
+}

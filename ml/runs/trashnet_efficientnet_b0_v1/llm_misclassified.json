@@ -1,0 +1,562 @@
+[
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash90.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Paper",
+    "raw_category": "Paper",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material visible is a thin, crumpled sheet that resembles paper.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 39,
+      "total_tokens": 8666
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/paper/paper312.jpg",
+    "true_trashnet": "paper",
+    "true_eval": "Paper",
+    "predicted_category": "General Waste",
+    "raw_category": "General Waste",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The image depicts a sofa, which does not fit into any of the recyclable material categories.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 42,
+      "total_tokens": 8669
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash4.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Plastic",
+    "raw_category": "Plastic",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material visible in the image is a clear plastic bag.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 36,
+      "total_tokens": 8663
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash91.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Plastic",
+    "raw_category": "Plastic",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material in the image is a plastic snack bag.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 35,
+      "total_tokens": 8662
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash14.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Plastic",
+    "raw_category": "Plastic",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material visible is a type of foam, which is a form of plastic.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 40,
+      "total_tokens": 8667
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash64.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Plastic",
+    "raw_category": "Plastic",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material visible is a plastic wrapper.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 32,
+      "total_tokens": 8659
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/paper/paper587.jpg",
+    "true_trashnet": "paper",
+    "true_eval": "Paper",
+    "predicted_category": "Plastic",
+    "raw_category": "Plastic",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material visible is a crumpled plastic wrapper.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 35,
+      "total_tokens": 8662
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash97.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Plastic",
+    "raw_category": "Plastic",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material visible appears to be a type of plastic wrapping.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 36,
+      "total_tokens": 8663
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash5.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Plastic",
+    "raw_category": "Plastic",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material in the image is a plastic tea bag packaging.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 36,
+      "total_tokens": 8663
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/cardboard/cardboard290.jpg",
+    "true_trashnet": "cardboard",
+    "true_eval": "Cardboard",
+    "predicted_category": "Plastic",
+    "raw_category": "Plastic",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material visible is plastic, specifically a clear plastic item.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 36,
+      "total_tokens": 8663
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/metal/metal91.jpg",
+    "true_trashnet": "metal",
+    "true_eval": "Metal",
+    "predicted_category": "Glass",
+    "raw_category": "Glass",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material visible in the image is a glass container.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 35,
+      "total_tokens": 8662
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash129.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Plastic",
+    "raw_category": "Plastic",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material in the image is a plastic toothpaste tube.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 35,
+      "total_tokens": 8662
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/paper/paper469.jpg",
+    "true_trashnet": "paper",
+    "true_eval": "Paper",
+    "predicted_category": "Metal",
+    "raw_category": "Metal",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material in the image is a metallic plate.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 34,
+      "total_tokens": 8661
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash114.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Plastic",
+    "raw_category": "Plastic",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material in the image is a plastic wrapper.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 34,
+      "total_tokens": 8661
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/plastic/plastic337.jpg",
+    "true_trashnet": "plastic",
+    "true_eval": "Plastic",
+    "predicted_category": "Glass",
+    "raw_category": "Glass",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material visible in the image is a clear glass container.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 36,
+      "total_tokens": 8663
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash57.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Plastic",
+    "raw_category": "Plastic",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material in the image is a plastic wrapper.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 34,
+      "total_tokens": 8661
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash8.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Paper",
+    "raw_category": "Paper",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material visible is crumpled paper.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 33,
+      "total_tokens": 8660
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/plastic/plastic259.jpg",
+    "true_trashnet": "plastic",
+    "true_eval": "Plastic",
+    "predicted_category": "Glass",
+    "raw_category": "Glass",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material appears to be glass based on the smooth, reflective surface.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 38,
+      "total_tokens": 8665
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/plastic/plastic432.jpg",
+    "true_trashnet": "plastic",
+    "true_eval": "Plastic",
+    "predicted_category": "Glass",
+    "raw_category": "Glass",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material visible in the image is a glass jar.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 35,
+      "total_tokens": 8662
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash80.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Paper",
+    "raw_category": "Paper",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The image shows a paper cup, which is primarily made of paper material.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 38,
+      "total_tokens": 8665
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/paper/paper213.jpg",
+    "true_trashnet": "paper",
+    "true_eval": "Paper",
+    "predicted_category": "Cardboard",
+    "raw_category": "Cardboard",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material visible is a piece of cardboard.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 34,
+      "total_tokens": 8661
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash117.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Paper",
+    "raw_category": "Paper",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material visible is crumpled paper.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 33,
+      "total_tokens": 8660
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/paper/paper200.jpg",
+    "true_trashnet": "paper",
+    "true_eval": "Paper",
+    "predicted_category": "General Waste",
+    "raw_category": "General Waste",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The item is a used toothpaste box, which is typically considered non-recyclable.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 41,
+      "total_tokens": 8668
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/paper/paper202.jpg",
+    "true_trashnet": "paper",
+    "true_eval": "Paper",
+    "predicted_category": "General Waste",
+    "raw_category": "General Waste",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The image features shoes, which do not fit into any of the specified recyclable material categories.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 42,
+      "total_tokens": 8669
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash85.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Plastic",
+    "raw_category": "Plastic",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material visible in the image appears to be a plastic wrapper.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 37,
+      "total_tokens": 8664
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/metal/metal329.jpg",
+    "true_trashnet": "metal",
+    "true_eval": "Metal",
+    "predicted_category": "Plastic",
+    "raw_category": "Plastic",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The image shows a plastic cup, which is the dominant material present.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 37,
+      "total_tokens": 8664
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash58.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Paper",
+    "raw_category": "Paper",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material visible is crumpled paper.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 33,
+      "total_tokens": 8660
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash134.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Plastic",
+    "raw_category": "Plastic",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material of the toothbrush is plastic.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 32,
+      "total_tokens": 8659
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/paper/paper166.jpg",
+    "true_trashnet": "paper",
+    "true_eval": "Paper",
+    "predicted_category": "General Waste",
+    "raw_category": "General Waste",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The material appears to be a non-recyclable mixed item that does not fit into the other specified categories.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 46,
+      "total_tokens": 8673
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash75.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Plastic",
+    "raw_category": "Plastic",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material visible is a crumpled plastic snack bag.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 36,
+      "total_tokens": 8663
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/metal/metal345.jpg",
+    "true_trashnet": "metal",
+    "true_eval": "Metal",
+    "predicted_category": "General Waste",
+    "raw_category": "General Waste",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The item appears to be crumpled aluminum foil, which is often considered general waste if not recyclable.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 45,
+      "total_tokens": 8672
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/metal/metal389.jpg",
+    "true_trashnet": "metal",
+    "true_eval": "Metal",
+    "predicted_category": "Glass",
+    "raw_category": "Glass",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The image shows a glass container with a smooth surface and a clear appearance.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 38,
+      "total_tokens": 8665
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash113.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Plastic",
+    "raw_category": "Plastic",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material in the image is a plastic snack bag.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 35,
+      "total_tokens": 8662
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/paper/paper529.jpg",
+    "true_trashnet": "paper",
+    "true_eval": "Paper",
+    "predicted_category": "General Waste",
+    "raw_category": "General Waste",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The item appears to be a mixed material that includes plastic and paper, making it unclassifiable as a single recyclable category.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 49,
+      "total_tokens": 8676
+    },
+    "error": null
+  },
+  {
+    "path": "/Users/marlone/Downloads/ecoScan-main/ml/data/raw/trashnet/dataset-resized/trash/trash83.jpg",
+    "true_trashnet": "trash",
+    "true_eval": "General Waste",
+    "predicted_category": "Plastic",
+    "raw_category": "Plastic",
+    "valid_prediction": true,
+    "confidence": "high",
+    "reasoning": "The dominant material in the image appears to be a crumpled plastic wrapper.",
+    "usage": {
+      "prompt_tokens": 8627,
+      "completion_tokens": 39,
+      "total_tokens": 8666
+    },
+    "error": null
+  }
+]
