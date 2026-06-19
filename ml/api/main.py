@@ -40,7 +40,8 @@ import base64
 import json
 
 # Make the ml/ package importable
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+""" sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..")) """
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
