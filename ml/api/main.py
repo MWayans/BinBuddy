@@ -36,17 +36,13 @@ async def classify(file: UploadFile = File(...)):
 
 import sys
 import os
-import base64
-import json
+import io
 
-# Make the ml/ package importable
-""" sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..")) """
+# Fix: point to ml/ so binbuddy_ml is importable
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from PIL import Image
-import io
 
 app = FastAPI(title="BinBuddy CNN Service")
 
@@ -57,33 +53,20 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# ── Load model once at startup ──────────────────────────────────────────────
 MODEL_PATH = os.environ.get(
     "CV_CHECKPOINT_PATH",
-    os.path.join(os.path.dirname(__file__), "..", "runs",
-                 "trashnet_efficientnet_b0_v1", "best_model.pt")
+    os.path.abspath(os.path.join(os.path.dirname(__file__), "..",
+                 "runs", "trashnet_efficientnet_b0_v1", "best_model.pt"))
 )
 CONFIG_PATH = os.environ.get(
     "CV_CONFIG_PATH",
-    os.path.join(os.path.dirname(__file__), "..",
-                 "configs", "trashnet_efficientnet_b0.yaml")
+    os.path.abspath(os.path.join(os.path.dirname(__file__), "..",
+                 "configs", "trashnet_efficientnet_b0.yaml"))
 )
 
-classifier = None
+# Import the function directly — no class wrapper needed
+from binbuddy_ml.inference.classifier import classify_image_bytes
 
-@app.on_event("startup")
-def load_model():
-    global classifier
-    # Import here so startup error is obvious in Railway logs
-    from binbuddy_ml.inference.classifier import EfficientNetClassifier
-    classifier = EfficientNetClassifier(
-        checkpoint_path=MODEL_PATH,
-        config_path=CONFIG_PATH,
-    )
-    print(f"✅ Model loaded from {MODEL_PATH}")
-
-
-# ── Health check (mirrors your /api/health) ─────────────────────────────────
 @app.get("/health")
 def health():
     return {
@@ -92,23 +75,17 @@ def health():
         "checkpoint": MODEL_PATH,
     }
 
-
-# ── Classification endpoint ─────────────────────────────────────────────────
 @app.post("/classify")
 async def classify(image: UploadFile = File(...)):
-    """
-    Accepts multipart/form-data with field name `image`
-    (matches what your route.ts already sends).
-    Returns the same JSON shape your app expects:
-    { trashnet_class, category, confidence, model, alternatives }
-    """
-    if classifier is None:
-        raise HTTPException(status_code=503, detail="Model not loaded")
-
     try:
         image_bytes = await image.read()
-        pil_image = Image.open(io.BytesIO(image_bytes)).convert("RGB")
-        result = classifier.predict(pil_image)
+        result = classify_image_bytes(
+            image_bytes,
+            config_path=CONFIG_PATH,
+            checkpoint_path=MODEL_PATH,
+        )
         return result
+    except FileNotFoundError as e:
+        raise HTTPException(status_code=503, detail=str(e))
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
