@@ -64,3 +64,6 @@ ml.zip
 # Large public files
 public/Hiker in Vast Landscape.png
 public/Misty Forest Trek.png
+
+# Allow model checkpoint for deployment
+!ml/runs/trashnet_efficientnet_b0_v1/best_model.pt
