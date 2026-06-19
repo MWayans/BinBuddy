@@ -1,0 +1,35 @@
+from fastapi import FastAPI, File, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
+import sys, os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+from ecoscan_ml.inference.classifier import EfficientNetClassifier
+
+app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["POST"],
+    allow_headers=["*"],
+)
+
+MODEL_PATH = os.environ.get(
+    "CV_CHECKPOINT_PATH",
+    "runs/trashnet_efficientnet_b0_v1/best_model.pt"
+)
+
+classifier = EfficientNetClassifier(checkpoint_path=MODEL_PATH)
+
+@app.get("/health")
+def health():
+    return {"status": "ok", "model": "efficientnet_b0"}
+
+@app.post("/classify")
+async def classify(file: UploadFile = File(...)):
+    image_bytes = await file.read()
+    result = classifier.predict_from_bytes(image_bytes)
+    return {
+        "category": result["category"],
+        "confidence": result["confidence"]
+    }

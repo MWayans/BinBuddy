@@ -1,0 +1,28 @@
+# Uses the same split manifest as the CNN experiment for fair comparison.
+experiment:
+  name: trashnet_efficientnet_b0_v1
+  seed: 42
+
+dataset:
+  name: trashnet
+  path: data/raw/trashnet/dataset-resized
+  classes:
+    - cardboard
+    - glass
+    - metal
+    - paper
+    - plastic
+    - trash
+  split:
+    train: 0.70
+    val: 0.15
+    test: 0.15
+
+output:
+  runs_dir: runs
+  registry_dir: registry
+
+llm:
+  model: openai/gpt-4o-mini
+  # Set limit to e.g. 20 for a cheap smoke test; null = full test set (384 images)
+  limit: null

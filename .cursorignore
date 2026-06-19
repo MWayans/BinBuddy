@@ -1,0 +1,12 @@
+# Secrets — never index or send to AI context
+.env
+.env.local
+.env.*.local
+
+# Large ML artifacts (optional noise reduction)
+ml/.venv/
+ml/runs/
+ml/registry/
+ml/**/*.pt
+ml/**/*.pth
+ml/data/raw/

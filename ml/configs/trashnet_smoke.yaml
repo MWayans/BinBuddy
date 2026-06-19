@@ -1,0 +1,56 @@
+experiment:
+  name: trashnet_smoke_test
+  seed: 42
+  description: "Quick smoke test — 2 epochs, for pipeline verification only"
+
+dataset:
+  name: trashnet
+  path: data/raw/trashnet/dataset-resized
+  classes:
+    - cardboard
+    - glass
+    - metal
+    - paper
+    - plastic
+    - trash
+  split:
+    train: 0.70
+    val: 0.15
+    test: 0.15
+  image_size: 224
+  num_workers: 0
+
+augmentation:
+  train:
+    random_resized_crop: true
+    horizontal_flip: true
+    rotation_degrees: 10
+  val:
+    resize: 256
+    center_crop: 224
+
+model:
+  architecture: efficientnet_b0
+  pretrained: true
+  num_classes: 6
+  dropout: 0.2
+
+training:
+  epochs: 2
+  batch_size: 16
+  optimizer: adamw
+  learning_rate: 0.0003
+  weight_decay: 0.01
+  scheduler: cosine
+  label_smoothing: 0.05
+  early_stopping_patience: 5
+  mixed_precision: false
+
+checkpointing:
+  monitor: val_macro_f1
+  mode: max
+  save_best_only: true
+
+output:
+  runs_dir: runs
+  registry_dir: registry
