@@ -11,13 +11,13 @@ import torch
 import torch.nn as nn
 from torch.optim.lr_scheduler import CosineAnnealingLR
 
-from ecoscan_ml.config import get_registry_dir, get_run_dir, load_config, resolve_path
-from ecoscan_ml.data.dataset import create_dataloaders, validate_samples
-from ecoscan_ml.data.download import download_trashnet
-from ecoscan_ml.data.splits import get_or_create_split_manifest
-from ecoscan_ml.models.factory import create_model
-from ecoscan_ml.reproducibility import set_seed
-from ecoscan_ml.training.engine import evaluate_model, train_one_epoch
+from binbuddy_ml.config import get_registry_dir, get_run_dir, load_config, resolve_path
+from binbuddy_ml.data.dataset import create_dataloaders, validate_samples
+from binbuddy_ml.data.download import download_trashnet
+from binbuddy_ml.data.splits import get_or_create_split_manifest
+from binbuddy_ml.models.factory import create_model
+from binbuddy_ml.reproducibility import set_seed
+from binbuddy_ml.training.engine import evaluate_model, train_one_epoch
 
 
 def _create_optimizer(model: nn.Module, config: dict) -> torch.optim.Optimizer:
@@ -44,7 +44,7 @@ def train(config_path: str, download: bool = False) -> Path:
     if not dataset_path.exists():
         raise FileNotFoundError(
             f"Dataset not found at {dataset_path}. "
-            "Run: python -m ecoscan_ml.data.download"
+            "Run: python -m binbuddy_ml.data.download"
         )
 
     manifest = get_or_create_split_manifest(config)

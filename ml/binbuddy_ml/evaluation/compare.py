@@ -6,7 +6,7 @@ import argparse
 import json
 from pathlib import Path
 
-from ecoscan_ml.config import get_run_dir, load_config
+from binbuddy_ml.config import get_run_dir, load_config
 
 
 def compare_baselines(config_path: str) -> dict:
@@ -31,7 +31,7 @@ def compare_baselines(config_path: str) -> dict:
         llm = json.load(f)
 
     # Map CNN TrashNet class names to eval labels for display consistency
-    from ecoscan_ml.evaluation.class_mapping import TRASHNET_TO_EVAL
+    from binbuddy_ml.evaluation.class_mapping import TRASHNET_TO_EVAL
 
     cnn_per_class = {}
     for trashnet_name, stats in cnn.get("per_class", {}).items():

@@ -9,7 +9,7 @@ from typing import Any
 
 import numpy as np
 
-from ecoscan_ml.config import resolve_path
+from binbuddy_ml.config import resolve_path
 
 
 @dataclass

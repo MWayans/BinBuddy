@@ -7,7 +7,7 @@ import urllib.request
 import zipfile
 from pathlib import Path
 
-from ecoscan_ml.config import ML_ROOT, resolve_path
+from binbuddy_ml.config import ML_ROOT, resolve_path
 
 TRASHNET_ARCHIVE_URL = (
     "https://github.com/garythung/trashnet/archive/refs/heads/master.zip"

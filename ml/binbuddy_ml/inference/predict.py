@@ -7,7 +7,7 @@ import base64
 import sys
 from pathlib import Path
 
-from ecoscan_ml.inference.classifier import (
+from binbuddy_ml.inference.classifier import (
     classify_image_bytes,
     classify_image_file,
     result_to_json,

@@ -12,12 +12,12 @@ import seaborn as sns
 import torch
 import torch.nn as nn
 
-from ecoscan_ml.config import get_run_dir, load_config, resolve_path
-from ecoscan_ml.data.dataset import WasteImageDataset, validate_samples
-from ecoscan_ml.data.splits import get_or_create_split_manifest
-from ecoscan_ml.data.transforms import build_transforms
-from ecoscan_ml.models.factory import create_model
-from ecoscan_ml.training.engine import evaluate_model
+from binbuddy_ml.config import get_run_dir, load_config, resolve_path
+from binbuddy_ml.data.dataset import WasteImageDataset, validate_samples
+from binbuddy_ml.data.splits import get_or_create_split_manifest
+from binbuddy_ml.data.transforms import build_transforms
+from binbuddy_ml.models.factory import create_model
+from binbuddy_ml.training.engine import evaluate_model
 from torch.utils.data import DataLoader
 
 

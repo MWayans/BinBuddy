@@ -12,7 +12,7 @@ from typing import Any
 
 from openai import OpenAI
 
-from ecoscan_ml.evaluation.class_mapping import EVAL_CATEGORIES, normalize_llm_category
+from binbuddy_ml.evaluation.class_mapping import EVAL_CATEGORIES, normalize_llm_category
 
 CLASSIFICATION_PROMPT = """You are evaluating waste material classification.
 

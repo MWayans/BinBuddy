@@ -11,10 +11,10 @@ import torch
 import torch.nn.functional as F
 from PIL import Image
 
-from ecoscan_ml.config import load_config, resolve_path
-from ecoscan_ml.data.transforms import build_transforms
-from ecoscan_ml.evaluation.class_mapping import TRASHNET_TO_EVAL
-from ecoscan_ml.models.factory import create_model
+from binbuddy_ml.config import load_config, resolve_path
+from binbuddy_ml.data.transforms import build_transforms
+from binbuddy_ml.evaluation.class_mapping import TRASHNET_TO_EVAL
+from binbuddy_ml.models.factory import create_model
 
 _DEFAULT_CONFIG = "configs/trashnet_efficientnet_b0.yaml"
 _DEFAULT_CHECKPOINT = "runs/trashnet_efficientnet_b0_v1/best_model.pt"

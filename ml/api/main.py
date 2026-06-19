@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import sys, os
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-from ecoscan_ml.inference.classifier import EfficientNetClassifier
+from binbuddy_ml.inference.classifier import EfficientNetClassifier
 
 app = FastAPI()
 

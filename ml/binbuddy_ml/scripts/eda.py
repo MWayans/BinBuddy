@@ -12,9 +12,9 @@ import pandas as pd
 import seaborn as sns
 from PIL import Image
 
-from ecoscan_ml.config import load_config, resolve_path
-from ecoscan_ml.data.download import download_trashnet
-from ecoscan_ml.data.splits import get_or_create_split_manifest
+from binbuddy_ml.config import load_config, resolve_path
+from binbuddy_ml.data.download import download_trashnet
+from binbuddy_ml.data.splits import get_or_create_split_manifest
 
 
 def run_eda(config_path: str, download: bool = False) -> Path:

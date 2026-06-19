@@ -9,7 +9,7 @@ import torch.nn as nn
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
-from ecoscan_ml.training.metrics import compute_metrics
+from binbuddy_ml.training.metrics import compute_metrics
 
 
 def _run_epoch(

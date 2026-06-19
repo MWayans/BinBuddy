@@ -13,16 +13,16 @@ import numpy as np
 from dotenv import load_dotenv
 from tqdm import tqdm
 
-from ecoscan_ml.config import get_run_dir, load_config, resolve_path
-from ecoscan_ml.data.splits import SplitManifest, get_or_create_split_manifest
-from ecoscan_ml.evaluation.class_mapping import (
+from binbuddy_ml.config import get_run_dir, load_config, resolve_path
+from binbuddy_ml.data.splits import SplitManifest, get_or_create_split_manifest
+from binbuddy_ml.evaluation.class_mapping import (
     EVAL_CATEGORIES,
     eval_label_to_index,
     trashnet_to_eval_label,
 )
-from ecoscan_ml.evaluation.llm_client import classify_image, create_llm_client
-from ecoscan_ml.evaluation.plots import plot_confusion_matrix
-from ecoscan_ml.training.metrics import compute_metrics
+from binbuddy_ml.evaluation.llm_client import classify_image, create_llm_client
+from binbuddy_ml.evaluation.plots import plot_confusion_matrix
+from binbuddy_ml.training.metrics import compute_metrics
 
 # Load gateway key from project root .env.local if present
 _PROJECT_ROOT = Path(__file__).resolve().parents[3]

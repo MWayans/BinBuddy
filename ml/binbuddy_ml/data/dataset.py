@@ -8,8 +8,8 @@ from typing import Any
 from PIL import Image
 from torch.utils.data import DataLoader, Dataset
 
-from ecoscan_ml.data.splits import SplitManifest
-from ecoscan_ml.data.transforms import build_transforms
+from binbuddy_ml.data.splits import SplitManifest
+from binbuddy_ml.data.transforms import build_transforms
 
 
 class WasteImageDataset(Dataset):
