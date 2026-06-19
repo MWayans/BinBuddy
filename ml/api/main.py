@@ -74,7 +74,7 @@ classifier = None
 def load_model():
     global classifier
     # Import here so startup error is obvious in Railway logs
-    from ecoscan_ml.inference.classifier import EfficientNetClassifier
+    from binbuddy_ml.inference.classifier import EfficientNetClassifier
     classifier = EfficientNetClassifier(
         checkpoint_path=MODEL_PATH,
         config_path=CONFIG_PATH,
