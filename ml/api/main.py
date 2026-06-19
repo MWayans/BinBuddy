@@ -34,7 +34,7 @@ async def classify(file: UploadFile = File(...)):
         "confidence": result["confidence"]
     } """
 
-    import sys
+import sys
 import os
 import base64
 import json
